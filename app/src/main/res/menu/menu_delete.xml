@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ItemsActivity">
+    <item
+        android:id="@+id/action_chat"
+        android:orderInCategory="100"
+        android:title="@string/view_maps"
+        android:icon="@drawable/ic_chat_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="200"
+        android:title="@string/action_delete"
+        android:icon="@drawable/ic_delete_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_view"
+        android:orderInCategory="300"
+        android:title="@string/view_settings"
+        android:icon="@drawable/ic_settings_24px"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="400"
+        android:title="@string/action_logout"
+        android:icon="@drawable/ic_exit_24dp"
+        app:showAsAction="ifRoom" />
+</menu>

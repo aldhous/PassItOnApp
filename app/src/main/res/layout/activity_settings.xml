@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/SettingActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:textAlignment="center"
+    android:accessibilityLiveRegion="polite"
+    android:scrollIndicators="right|top"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/labelFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:layout_marginLeft="3dp"
+            android:labelFor="@+id/editFirstName"
+            android:layout_marginTop="14dp" />
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_gravity="right">
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/labelLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:layout_marginLeft="3dp"
+            android:labelFor="@+id/editLastName"/>
+
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:layout_marginLeft="3dp"
+            
+            android:labelFor="@+id/editEmail"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/emailHint"
+            android:textColorHint="@color/hintColor"/>
+
+
+        <TextView
+            android:id="@+id/labelPostcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/postcode"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:layout_marginLeft="3dp"
+            android:labelFor="@+id/editPostcode"/>
+
+        <EditText
+            android:id="@+id/editPostcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:hint="@string/postcodeHint"
+            android:textColorHint="@color/hintColor"/>
+
+        <TextView
+            android:id="@+id/labelPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:layout_marginLeft="3dp"
+            android:labelFor="@+id/editPhone"/>
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/phoneHint"
+            android:textColorHint="@color/hintColor"/>
+
+        <TextView
+            android:id="@+id/labelPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:layout_marginLeft="3dp"
+            android:labelFor="@+id/editPassword"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/passwordHint"
+            android:textColorHint="@color/hintColor"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:onClick="run"
+            android:background="@drawable/rounded_green"
+            android:height="56dp"
+            android:width="240dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+</ScrollView>

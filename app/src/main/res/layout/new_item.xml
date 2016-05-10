@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/camera_icon"
+            android:scaleType="centerCrop"
+            android:title="@string/action_add"
+            android:contentDescription="@string/action_add"
+            android:focusableInTouchMode="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nametitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:labelFor="@+id/name"
+            android:text="@string/item_title" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/hint_title"
+            android:textColorHint="@color/hintColor"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:singleLine="true">
+        </EditText>
+
+        <TextView
+            android:id="@+id/desctitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/item_description"
+            android:labelFor="@+id/desc"/>
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/hint_desc"
+            android:textColorHint="@color/hintColor"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:inputType="text|textCapSentences" />
+
+        <TextView
+            android:id="@+id/postcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:labelFor="@+id/local"
+            android:text = "@string/location" />
+
+        <EditText
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/hint_postcode"
+            android:textColorHint="@color/hintColor"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/pickuptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text = "@string/pickup_time"
+            android:labelFor="@+id/pickup" />
+
+        <EditText
+            android:id="@+id/pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/hint_pickup"
+            android:textColorHint="@color/hintColor"
+            android:imeOptions="actionDone"
+            android:inputType="text|textCapSentences"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:background="@drawable/rounded_green"
+            android:height="56dp"
+            android:width="240dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</ScrollView>

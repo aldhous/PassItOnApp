@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#689999"
+    android:textAlignment="center"
+    android:scrollIndicators="right|top"
+    android:accessibilityLiveRegion="polite"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/large_logo"
+        android:contentDescription="@string/logo_alt"
+        android:maxWidth="341dp"
+        android:maxHeight="220dp" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:foregroundGravity="center|center_horizontal" />
+
+    <AutoCompleteTextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_email"
+        android:textColorHint="@color/hintColor"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:height="56dp"
+        android:padding="10sp"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:imeOptions="actionNext"
+        android:background="@drawable/border_grey" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="@color/hintColor"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:width="240dp"
+        android:height="56dp"
+        android:padding="10sp"
+        android:background="@drawable/border_grey"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:imeOptions="actionNext"
+        android:typeface="sans" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:id="@+id/email_sign_in_button"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_green"
+        android:height="56dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgotten"
+            android:id="@+id/textView2"
+            android:layout_marginBottom="8dp"
+            android:textColor="#cccccc"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:id="@+id/textView"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+</ScrollView>
